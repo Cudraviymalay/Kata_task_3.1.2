@@ -1,14 +1,11 @@
 package ru.kata.spring.boot_security.demo.models;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Users")
 public class User {
 
-    @javax.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
