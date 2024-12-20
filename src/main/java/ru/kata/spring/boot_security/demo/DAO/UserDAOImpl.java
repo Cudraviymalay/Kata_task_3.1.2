@@ -30,6 +30,8 @@ public class UserDAOImpl implements UserDAO {
             userToUpdate.setName(updatedUser.getName());
             userToUpdate.setSurname(updatedUser.getSurname());
             userToUpdate.setAge(updatedUser.getAge());
+            userToUpdate.setEmail(updatedUser.getEmail());
+            userToUpdate.setPassword(updatedUser.getPassword());
             entityManager.merge(userToUpdate);
         }
     }
